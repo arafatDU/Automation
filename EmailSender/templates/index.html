@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sender</title>
+</head>
+<body>
+    <h1>Daily Report Email</h1>
+    <p>This is a preview of the daily report email.</p>
+    <hr>
+    <div>
+        <h2>HTML Content</h2>
+        <textarea rows="10" style="width: 100%;">{{ email_content }}</textarea>
+    </div>
+    <hr>
+    <form action="/send-email" method="post">
+        <button type="submit">Send Email</button>
+    </form>
+</body>
+</html>
